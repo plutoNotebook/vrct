@@ -66,7 +66,7 @@ class CommaSeparatedList(click.ParamType):
 @click.option('--std',           help='P_std of Log Normal Distribution', metavar='FLOAT',          type=click.FloatRange(), default=2.0, show_default=True)
 
 @click.option('--mapping',       help='Type of mapping fn', metavar='STR',                          type=click.Choice(['const', 'sigmoid']), default='sigmoid', show_default=True)
-@click.option('--double',        help='How often to reduce dt', metavar='TICKS',                    type=click.IntRange(min=1), default=500, show_default=True)
+@click.option('--double',        help='How often to reduce dt', metavar='TICKS',                    type=click.IntRange(min=1), default=150, show_default=True)
 
 @click.option('-q',              help='Decay Factor', metavar='FLOAT',                              type=click.FloatRange(min=0, min_open=True), default=2.0, show_default=True)
 @click.option('-k',              help='Mapping fn hyperparams', metavar='FLOAT',                    type=click.FloatRange(), default=8.0, show_default=True)
